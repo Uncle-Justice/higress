@@ -116,7 +116,7 @@ func getServerCommand() *cobra.Command {
 
 	loggingOptions.AttachCobraFlags(serveCmd)
 	serverArgs.GrpcKeepAliveOptions.AttachCobraFlags(serveCmd)
-
+	_, _ = divide(4, 5)
 	return serveCmd
 }
 
