@@ -116,6 +116,8 @@ func getServerCommand() *cobra.Command {
 	loggingOptions.AttachCobraFlags(serveCmd)
 	serverArgs.GrpcKeepAliveOptions.AttachCobraFlags(serveCmd)
 	patchCov(1, 1)
+	patchCov(-1, 1)
+	patchCov(1, -1)
 	return serveCmd
 }
 
