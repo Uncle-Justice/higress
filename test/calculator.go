@@ -4,19 +4,19 @@ import "fmt"
 
 type Calculator struct{}
 
-func (c Calculator) Add(x, y int) int {
+func (c Calculator) Add1(x, y int) int {
     return x + y
 }
 
-func (c Calculator) Subtract(x, y int) int {
+func (c Calculator) Subtract1(x, y int) int {
     return x - y
 }
 
-func (c Calculator) Multiply(x, y int) int {
+func (c Calculator) Multiply1(x, y int) int {
     return x * y
 }
 
-func (c Calculator) Divide(x float64, y float64) (float64, error) {
+func (c Calculator) Divide1(x float64, y float64) (float64, error) {
     if y == 0 {
         return 0, fmt.Errorf("Cannot divide by 0")
     }
