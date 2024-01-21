@@ -15,6 +15,7 @@
 package cmd
 
 import (
+	"errors"
 	"fmt"
 	"time"
 
@@ -115,6 +116,14 @@ func getServerCommand() *cobra.Command {
 
 	loggingOptions.AttachCobraFlags(serveCmd)
 	serverArgs.GrpcKeepAliveOptions.AttachCobraFlags(serveCmd)
-
+	_, _ = divide(4, 5)
+	_, _ = divide(4, 0)
 	return serveCmd
+}
+
+func divide(x, y float64) (float64, error) {
+	if y <= 0 {
+		return 0, errors.New("y must be greater than 0")
+	}
+	return x / y, nil
 }

@@ -58,5 +58,8 @@ func Print(w io.Writer, format string) error {
 		_, _ = fmt.Fprintf(w, "GIT_COMMIT_ID: %s\n", v.GitCommitID)
 	}
 
+	if format == ""{
+		fmt.Printf("just for test")
+	}
 	return nil
 }
