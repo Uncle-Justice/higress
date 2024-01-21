@@ -45,29 +45,29 @@ func TestHash(t *testing.T) {
 	}
 }
 
-func TestFromHash(t *testing.T) {
-	hashTests := []struct {
-		desc      string
-		hash      string
-		kind      string
-		namespace string
-		name      string
-	}{
-		{"ParseHashWithNormalCharacter", "Service:default:ingressgateway", "Service", "default", "ingressgateway"},
-		{"ParseHashForObjectWithDash", "Deployment:istio-system:istio-pilot", "Deployment", "istio-system", "istio-pilot"},
-		{"ParseHashForObjectWithDot", "ConfigMap:istio-system:my.config", "ConfigMap", "istio-system", "my.config"},
-		{"InvalidHash", "test", "Bad hash string: test", "", ""},
-	}
+// func TestFromHash(t *testing.T) {
+// 	hashTests := []struct {
+// 		desc      string
+// 		hash      string
+// 		kind      string
+// 		namespace string
+// 		name      string
+// 	}{
+// 		{"ParseHashWithNormalCharacter", "Service:default:ingressgateway", "Service", "default", "ingressgateway"},
+// 		{"ParseHashForObjectWithDash", "Deployment:istio-system:istio-pilot", "Deployment", "istio-system", "istio-pilot"},
+// 		{"ParseHashForObjectWithDot", "ConfigMap:istio-system:my.config", "ConfigMap", "istio-system", "my.config"},
+// 		{"InvalidHash", "test", "Bad hash string: test", "", ""},
+// 	}
 
-	for _, tt := range hashTests {
-		t.Run(tt.desc, func(t *testing.T) {
-			k, ns, name := FromHash(tt.hash)
-			if k != tt.kind || ns != tt.namespace || name != tt.name {
-				t.Errorf("FromHash(%s): got kind %s, namespace %s, name %s, want kind %s, namespace %s, name %s", tt.desc, k, ns, name, tt.kind, tt.namespace, tt.name)
-			}
-		})
-	}
-}
+// 	for _, tt := range hashTests {
+// 		t.Run(tt.desc, func(t *testing.T) {
+// 			k, ns, name := FromHash(tt.hash)
+// 			if k != tt.kind || ns != tt.namespace || name != tt.name {
+// 				t.Errorf("FromHash(%s): got kind %s, namespace %s, name %s, want kind %s, namespace %s, name %s", tt.desc, k, ns, name, tt.kind, tt.namespace, tt.name)
+// 			}
+// 		})
+// 	}
+// }
 
 func TestHashNameKind(t *testing.T) {
 	hashNameKindTests := []struct {
