@@ -60,6 +60,8 @@ prebuild: submodule
 .PHONY: default
 default: build
 
+SUBDIRS:= $(wildcard ./plugins/wasm-go/extensions/*/)
+
 .PHONY: go.test.coverage
 go.test.coverage: prebuild
 	go test ./cmd/... ./pkg/... -race -coverprofile=coverage.xml -covermode=atomic
