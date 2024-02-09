@@ -63,6 +63,8 @@ default: build
 .PHONY: go.test.coverage
 go.test.coverage: prebuild
 	go test ./cmd/... ./pkg/... -race -coverprofile=coverage.xml -covermode=atomic
+	@$(foreach subdir, $(SUBDIRS), \
+		cd $(subdir) && go test ./... -race -coverprofile=coverage.xml -covermode=atomic && cd -;)
 
 .PHONY: build
 build: prebuild $(OUT)
