@@ -1,11 +1,11 @@
-module bot-detect
+module github.com/alibaba/higress/plugins/wasm-go/extensions/bot-detect
 
 go 1.19
 
 require (
 	github.com/alibaba/higress/plugins/wasm-go v1.3.2
 	github.com/stretchr/testify v1.8.0
-	github.com/tetratelabs/proxy-wasm-go-sdk v0.19.1-0.20220822060051-f9d179a57f8c
+	github.com/tetratelabs/proxy-wasm-go-sdk v0.22.0
 	github.com/tidwall/gjson v1.14.3
 	github.com/wasilibs/go-re2 v1.4.1
 )

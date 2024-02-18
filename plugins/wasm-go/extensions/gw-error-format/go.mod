@@ -1,4 +1,4 @@
-module wasm-demo
+module github.com/alibaba/higress/plugins/wasm-go/extensions/gw-error-format
 
 go 1.18
 

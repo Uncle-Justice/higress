@@ -1,4 +1,4 @@
-module cors
+module github.com/alibaba/higress/plugins/wasm-go/extensions/cors
 
 go 1.19
 

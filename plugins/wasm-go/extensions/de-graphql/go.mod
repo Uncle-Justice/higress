@@ -1,4 +1,4 @@
-module de-graphql
+module github.com/alibaba/higress/plugins/wasm-go/extensions/de-graphql
 
 go 1.19
 

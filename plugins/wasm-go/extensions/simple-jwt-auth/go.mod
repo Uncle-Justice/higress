@@ -1,4 +1,4 @@
-module jwt-auth
+module github.com/alibaba/higress/plugins/wasm-go/extensions/simple-jwt-auth
 
 go 1.19
 

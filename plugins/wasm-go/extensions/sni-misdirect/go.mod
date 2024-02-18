@@ -1,4 +1,4 @@
-module wasm_go/higress/plugins/wasm-go/extensions/sni_misdirect
+module github.com/alibaba/higress/plugins/wasm-go/extensions/sni_misdirect
 
 go 1.19
 

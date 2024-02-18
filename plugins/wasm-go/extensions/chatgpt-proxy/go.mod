@@ -1,4 +1,4 @@
-module chatgpt-proxy
+module github.com/alibaba/higress/plugins/wasm-go/extensions/chatgpt-proxy
 
 go 1.19
 

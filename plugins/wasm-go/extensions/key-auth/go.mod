@@ -1,4 +1,4 @@
-module key-auth
+module github.com/alibaba/higress/plugins/wasm-go/extensions/key-auth
 
 go 1.19
 

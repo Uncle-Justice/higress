@@ -1,4 +1,4 @@
-module oidc
+module github.com/alibaba/higress/plugins/wasm-go/extensions/oidc
 
 go 1.19
 
