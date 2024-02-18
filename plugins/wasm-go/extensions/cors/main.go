@@ -15,7 +15,7 @@
 package main
 
 import (
-	"cors/config"
+	"github.com/alibaba/higress/plugins/wasm-go/extensions/cors/config"
 	"fmt"
 	"net/http"
 

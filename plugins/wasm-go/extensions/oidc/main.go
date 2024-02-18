@@ -19,7 +19,7 @@ import (
 	"fmt"
 	"net/http"
 	"net/url"
-	"oidc/oc"
+	"github.com/alibaba/higress/plugins/wasm-go/extensions/oidc/oc"
 	"strings"
 	"time"
 

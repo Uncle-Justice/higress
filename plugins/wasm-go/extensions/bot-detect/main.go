@@ -17,7 +17,7 @@
 package main
 
 import (
-	"bot-detect/config"
+	"github.com/alibaba/higress/plugins/wasm-go/extensions/bot-detect/config"
 	"github.com/alibaba/higress/plugins/wasm-go/pkg/wrapper"
 	"github.com/tetratelabs/proxy-wasm-go-sdk/proxywasm"
 	"github.com/tetratelabs/proxy-wasm-go-sdk/proxywasm/types"

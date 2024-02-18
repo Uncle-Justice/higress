@@ -18,7 +18,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"de-graphql/config"
+	"github.com/alibaba/higress/plugins/wasm-go/extensions/de-graphql/config"
 	"github.com/alibaba/higress/plugins/wasm-go/pkg/wrapper"
 	"github.com/tetratelabs/proxy-wasm-go-sdk/proxywasm"
 	"github.com/tetratelabs/proxy-wasm-go-sdk/proxywasm/types"
